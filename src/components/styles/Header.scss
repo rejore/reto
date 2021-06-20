@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, auto);
+  padding: 1em 2em;
+}
+
+.header__figure--icon {
+  text-align: right;
+}
+
+.header__figure--icon span {
+  color: #6769ff;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 0.5rem;
+}
+
+.header__figure--icon img {
+  vertical-align: middle;
+}
+
+/*media queries*/
+@media only screen and (min-width: 907px) {
+  .header__figure--icon {
+    display: none;
+  }
+
+  .header {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .header__figure--iconMedia {
+    text-align: right;
+    align-items: center;
+  }
+
+  .header__figure--question {
+    color: #676f8f;
+    margin-right: 20px;
+  }
+
+  .header__figure--phone {
+    color: #6f7dff;
+    font-weight: bold;
+  }
+
+  .header__figure--iconPhone {
+    position: relative;
+    top: 7px;
+    padding-right: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .header__figure--iconMedia {
+    display: none;
+  }
+}

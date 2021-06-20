@@ -1,0 +1,25 @@
+.container__home {
+  display: grid;
+  grid-template-columns: 39% auto;
+  height: 100vh;
+}
+
+.container__home--left{
+  background:#ECF0FF;
+}
+
+
+/*medias queries*/
+@media only screen and (max-width: 360px) {
+  .container__home {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-bottom: 40px;
+  }
+
+  .container__home--right,
+  .container__home--left {
+    width: 100%;
+  }
+}
